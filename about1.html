@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<style>
+    .nav{
+        background-color: rgba(32, 40, 64, 0.8);
+        padding: 1.5%;
+        left: 0;
+        top: 0;
+        position: fixed;
+        width: 100%;
+    }
+    .menu{
+        display: flex;
+        justify-content: center;
+        gap: 15%;
+        font-weight: bold;
+        font-size: large;
+    }
+    .menu a{
+        color:  #5069cc;
+    }
+    .menu a:hover{
+        color: bisque;
+    }
+    body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    background: linear-gradient(
+        135deg,
+        #0c1022,
+        #121a35,
+        #0a0f1f
+    );
+    color:white;
+}
+
+
+.main{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:80px;
+    padding:140px 10%;
+    min-height:100vh;
+}
+
+
+.image-container{
+    padding:15px;
+    background:rgba(255,255,255,0.05);
+    border-radius:15px;
+    box-shadow:0 0 25px rgba(80,105,204,0.4);
+    backdrop-filter: blur(8px);
+    left: 2%;
+}
+
+.image-container img{
+    width:320px;
+    height:320px;
+    object-fit:cover;
+    border-radius:12px;
+}
+
+
+
+.bio{
+    max-width:50%;
+}
+
+.bio h1{
+    font-family:'Orbitron',sans-serif;
+    font-size:42px;
+    margin-bottom:10px;
+    color:#7f9cff;
+}
+
+.bio p{
+    line-height:1.7;
+    color:#cfd6ff;
+    margin-bottom:25px;
+}
+
+
+.bio h2{
+    
+    color:#5069cc;
+}
+
+
+.project{
+    position: relative;
+    padding:14px 18px;
+    background:rgba(80,105,204,0.15);
+    border-left:4px solid #5069cc;
+    border-radius:8px;
+    transition:0.3s;
+    cursor:pointer;
+}
+
+.project:hover{
+    transform:translateX(8px);
+    background:rgba(80,105,204,0.3);
+}
+
+
+.project-info{
+    position:absolute;
+    left:105%;
+    top:50%;
+    transform:translateY(-50%) scale(0.9);
+
+    width:260px;
+    padding:12px;
+
+    background:#0f1530;
+    border-radius:8px;
+    box-shadow:0 0 18px rgba(0,0,0,0.6);
+
+    font-size:14px;
+    line-height:1.5;
+    color:#dbe2ff;
+
+    opacity:0;
+    pointer-events:none;
+    transition:0.25s ease;
+}
+
+
+.project:hover .project-info{
+    opacity:1;
+    transform:translateY(-50%) scale(1);
+}
+footer{
+         background: rgba(32, 40, 64, 0.8);
+        position: relative;
+        left: 0;
+        bottom: 0;
+        width: 100%; 
+      
+    }
+
+.footer_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   padding: 12px 20px;
+    color: #cfd8ff;
+    font-family: 'Poppins', sans-serif;
+}
+.foot{
+   padding-top: 1%;
+}
+</style>
+<body>
+            <div class="nav">
+            <div class="menu">
+                    <a href="indexp.html" >Home</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="main">
+
+    <div class="image-container">
+        <img src="https://imgs.search.brave.com/3NJKW5qpEpfWz-pqh2bl5MTj0_8xFG5YcNPoQA4xqms/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9jdXRlLWFuaW1l/LWJveS13YWxscGFw/ZXJfNzc2ODk0LTEw/OTIzOC5qcGc_c2Vt/dD1haXNfaHlicmlk/Jnc9NzQwJnE9ODA" alt="">
+    </div>
+
+    <div class="bio">
+        <h1>Pratick Saha</h1>
+
+        <p>
+            I am a passionate and curious learner with a strong interest in technology and software development. 
+            I enjoy exploring how digital systems work and continuously improving my skills in programming, web design, and problem-solving. I focus on building clear logical thinking and writing clean, structured code while learning new tools and concepts step by step. I am always motivated to grow, experiment with ideas, and turn creativity into practical solutions through technology.
+        </p>
+
+        <h2>My Projects</h2>
+
+        <div class="projects">
+            <div class="project">Institute Chatbot
+                 <div class="project-info">
+            A custom HTML, CSS, and JavaScript chatbot designed to answer institute-related queries on a webpage.
+        </div>
+            </div>
+            <div class="project">Portfolio Website
+                <div class="project-info">
+            A responsive portfolio showcasing skills, bio, and development work.
+        </div>
+            </div>
+            <div class="project">Smart Feedback Collector for Educational Institutions
+                <div class="project-info">
+            Hackathon project focused on collecting and analyzing student feedback digitally.
+        </div>
+            </div>
+            <div class="project">Alzheimer Detection using MRI Images
+                <div class="project-info">
+            Machine learning project involving dataset preparation, preprocessing, and model training.
+        </div>
+            </div>
+            <div class="project">Face Detection System
+                <div class="project-info">
+            A computer vision project that detects human faces in real time using image processing and machine learning techniques.
+        </div>
+            </div>
+            <div class="project">Icon-Based Web Chatbot Interface
+                <div class="project-info">
+                    Interactive chatbot UI integrated into websites for contextual communication.
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+        <div class="foot">
+             <footer>
+                <div class="footer_content">
+                  <p>© 2026 Pratick Saha | All Rights Reserved</p>
+                </div>
+            </footer>
+    </div>
+</body>
+</html>
